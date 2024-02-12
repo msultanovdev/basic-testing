@@ -1,14 +1,14 @@
-import {  simpleCalculator, Action } from './index';
+import { simpleCalculator, Action } from './index';
 
 const testCases = [
-    { a: 1, b: 2, action: Action.Add, expected: 3 },
-    { a: 2, b: 2, action: Action.Subtract, expected: 0 },
-    { a: 3, b: 2, action: Action.Multiply, expected: 6 },
-    { a: 3, b: 2, action: Action.Divide, expected: 1.5 },
-    { a: "str", b: 2, action: Action.Add, expected: null },
-    { a: 1, b: 0, action: Action.Subtract, expected: 1 },
-    { a: 2, b: 0, action: Action.Multiply, expected: 0 },
-    { a: 3, b: 0, action: Action.Divide, expected: Infinity }
+  { a: 1, b: 2, action: Action.Add, expected: 3 },
+  { a: 2, b: 2, action: Action.Subtract, expected: 0 },
+  { a: 3, b: 2, action: Action.Multiply, expected: 6 },
+  { a: 3, b: 2, action: Action.Divide, expected: 1.5 },
+  { a: 'str', b: 2, action: Action.Add, expected: null },
+  { a: 1, b: 0, action: Action.Subtract, expected: 1 },
+  { a: 2, b: 0, action: Action.Multiply, expected: 0 },
+  { a: 3, b: 0, action: Action.Divide, expected: Infinity },
 ];
 
 describe('simpleCalculator', () => {
